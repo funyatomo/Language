@@ -31,7 +31,7 @@ echo $?
 echo $?
 # 直前のコマンドの終了ステータスを参照する
 
-if grep 'loop' hoge.sh >/dev/null 2>&1
+if grep 'loop' hoge.sh >/dev/null 2>&1; then
   echo "loop found."
 fi
 
