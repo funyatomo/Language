@@ -12,3 +12,6 @@ http://motw.mods.jp/shellscript/tutorial.html
 
 https://sites.google.com/a/tatsuo.jp/programming/Home/bash/hentai-bunpou-saisoku-masuta
 
+
+1/
+変数の宣言・読み取り、echo文、条件分岐(if,case)
