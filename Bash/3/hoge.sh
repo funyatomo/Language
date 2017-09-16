@@ -29,3 +29,48 @@ echo
 VAR=$(echo hello)
 echo $VAR
 echo
+
+# 空文字の設定
+VAR=
+echo "VAR is ${VAR}."
+echo
+
+# evalで変数を２重に展開
+FOO=BAR
+BAR=HOGEHOGE
+eval echo '$'$FOO
+
+# unset で変数を削除する
+# 変数の前に$は不要
+unset VAR
+echo "$VAR."
+echo
+
+# 終了ステータス
+VAR=$(echo hello;exit 2)
+echo $?
+echo
+
+# 実行行番号
+echo $LINENO
+echo $LINENO
+echo
+
+# $@と$*
+set a b c
+echo $@
+echo $*
+echo
+
+echo 'in case of $@'
+for i in "$@"
+do
+  echo $i
+done
+
+echo 'in case of $*'
+for i in "$*"
+do
+  echo $i
+done
+echo
