@@ -9,3 +9,11 @@ echo
 
 array=($(date))
 echo ${array[2]}
+echo
+
+# 配列の要素を追加する
+echo ${array[@]}
+array+=("hoge" "aha" "123")
+echo ${array[@]}
+echo
+
