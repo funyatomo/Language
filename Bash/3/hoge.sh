@@ -56,8 +56,8 @@ echo $LINENO
 echo $LINENO
 echo
 
-# $@と$*
-set a b c
+# $@と$* 個別とまとめて
+set a b c d e f g h i j
 echo $@
 echo $*
 echo
@@ -73,4 +73,9 @@ for i in "$*"
 do
   echo $i
 done
+echo
+
+echo $10 ${10}
+# カレントディレクトリとデリミタの設定
+echo $PWD $IFS
 echo
