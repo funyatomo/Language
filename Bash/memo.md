@@ -16,6 +16,11 @@ https://sites.google.com/a/tatsuo.jp/programming/Home/bash/hentai-bunpou-saisoku
 1/
 変数の宣言・読み取り、echo文、条件分岐(if,case)
 
+3/
+変数を使用する
+
+4/
+配列を使用する
 
 shellscript.sunone.me
 
