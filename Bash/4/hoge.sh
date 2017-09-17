@@ -22,3 +22,20 @@ echo ${array[*]}; echo
 for i in "${array[@]}"; do echo $i; done
 echo
 for i in "${array[*]}"; do echo $i; done
+echo
+
+# 配列の要素数の出力
+echo "${#array[*]}"
+echo "${#array[@]}"
+echo
+
+# IFS関連の問題
+array=(1 2 3 4 5 "6 6")
+for i in ${array[@]}; do echo $i; done
+echo
+for i in ${array[*]}; do echo $i; done
+echo
+for i in "${array[@]}"; do echo $i; done
+echo
+
+# 文字列についての細かいところは置いておく
