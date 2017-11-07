@@ -27,11 +27,14 @@ done
 
 var
 echo $?
+echo "command exit status of 'var' is not 0 because of error."
 :
 echo $?
+echo "command exit status of ':' is 0"
 # 直前のコマンドの終了ステータスを参照する
 
 if grep 'loop' hoge.sh >/dev/null 2>&1; then
   echo "loop found."
 fi
 
+# コマンドをifの判定に用いることも可能
