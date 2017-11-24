@@ -1,5 +1,6 @@
 # Makefile for mod1.f90 mod2.f90 main.f90
 # http://www.wagavulin.jp/entry/20130601/1370114999
+# http://www.rivhiro-weather.com/knowledge/?p=124
 
 PROGRAM := app
 OBJS := src/mod1.o src/mod2.o src/main.o
