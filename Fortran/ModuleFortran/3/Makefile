@@ -31,7 +31,7 @@ src/main2.F90: src/main.F90
 	cpp -P -Dhoge $< $@
 
 .F90.o:
-	$(FC) -c $< $(DEBUG) $(FFLAGS) $@
+	$(FC) -c $< $(FFLAGS) $@
 .f90.o:
 	$(FC) -c $< $(FFLAGS) $@
 # サフィックスルール
