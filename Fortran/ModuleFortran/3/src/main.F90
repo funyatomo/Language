@@ -3,9 +3,9 @@ program main
   use mod2
   implicit none
 
+#ifndef hoge
   call subprog1
-
-#ifdef hoge
+#else
   call subprog2
 #endif
 
